@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Form } from "react-bootstrap"
+import { Container, Form, Button } from "react-bootstrap"
 
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       <div className="w-100" style={{ maxWidth: '400px' }}>
         <h2>General Cyber Resillience</h2>
         <Form>
-          <Form.Group controlId="cyberRanges">
+          <Form.Group controlId="generalCyberResillience">
             <Form.Label>Information Security Investment</Form.Label>
             <Form.Control type="range" /> 
           </Form.Group>
@@ -31,6 +31,9 @@ function App() {
             <Form.Label>Business Continuity Management Investment</Form.Label>
             <Form.Control type="range" /> 
           </Form.Group>
+          <Button variant="primary" type="submit">
+            Submit
+          </Button>
         </Form>
       </div>
       </Container>
