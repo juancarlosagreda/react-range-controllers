@@ -448,4 +448,4 @@ const myModel =
 </InsightMakerModel>
     `;
 
-exports.myModel = myModel;
+//exports.myModel = myModel;
