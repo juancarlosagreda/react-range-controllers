@@ -1,3 +1,6 @@
 [submodule "range-controllers/src/insightmaker"]
 	path = range-controllers/src/insightmaker
 	url = https://github.com/juancarlosagreda/insightmaker.git
+[submodule "range-controllers/public/insightmaker"]
+	path = range-controllers/public/insightmaker
+	url = https://github.com/juancarlosagreda/insightmaker.git
