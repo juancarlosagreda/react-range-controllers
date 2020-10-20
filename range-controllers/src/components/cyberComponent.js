@@ -58,23 +58,23 @@ class CyberComponent extends Component {
                     <h2>General Cyber Resillience</h2>
                     <Form onSubmit={this.handleSubmit}>
                         <Form.Group controlId="generalCyberResillience">
-                            <Form.Control plaintext readOnly value={"Information Security Investment: $ " + this.state.infoSecurity}></Form.Control>
+                            <Form.Control plaintext readOnly value={"Information Security Investment: " + this.state.infoSecurity + " %"}></Form.Control>
                             <Form.Control type="range" onChange={this.handleInfoChange}/> 
                         </Form.Group>
                     <Form.Group controlId="cyberRanges">
-                    <Form.Control plaintext readOnly value={"Threat and Vulnerability Management Investment: $ " + this.state.vulnerabilityManage}></Form.Control>
+                    <Form.Control plaintext readOnly value={"Threat and Vulnerability Management Investment: " + this.state.vulnerabilityManage + " %"}></Form.Control>
                         <Form.Control type="range" onChange={this.handleVulnerabilityChange}/> 
                     </Form.Group>
                     <Form.Group controlId="cyberRanges">
-                    <Form.Control plaintext readOnly value={"Information Sharing Investment: $ " + this.state.infoSharing}></Form.Control>
+                    <Form.Control plaintext readOnly value={"Information Sharing Investment: " + this.state.infoSharing + " %"}></Form.Control>
                         <Form.Control type="range" onChange={this.handleInfoSharingChange}/> 
                     </Form.Group>
                     <Form.Group controlId="cyberRanges">
-                    <Form.Control plaintext readOnly value={"Training Investment: $ " + this.state.training}></Form.Control>
+                    <Form.Control plaintext readOnly value={"Training Investment: " + this.state.training + " %"}></Form.Control>
                         <Form.Control type="range" onChange={this.handleTrainingChange}/> 
                     </Form.Group>
                     <Form.Group controlId="cyberRanges">
-                    <Form.Control plaintext readOnly value={"Business Continuity Management Investment: $ " + this.state.businessCont}></Form.Control>
+                    <Form.Control plaintext readOnly value={"Business Continuity Management Investment: " + this.state.businessCont + " %"}></Form.Control>
                         <Form.Control type="range" onChange={this.handleBusinessChange}/> 
                     </Form.Group>
                     <Button variant="primary" type="submit">
