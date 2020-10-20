@@ -7,11 +7,11 @@ class CyberComponent extends Component {
     constructor(props) {
         super(props);
         this.state = {
-          infoSecurity: 0,
-          vulnerabilityManage: 0,
-          infoSharing: 0,
-          training: 0,
-          businessCont: 0
+          infoSecurity: 50,
+          vulnerabilityManage: 50,
+          infoSharing: 50,
+          training: 50,
+          businessCont: 50
         }
         this.handleInfoChange = this.handleInfoChange.bind(this);
         this.handleVulnerabilityChange = this.handleVulnerabilityChange.bind(this);
