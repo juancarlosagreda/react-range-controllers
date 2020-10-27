@@ -24,7 +24,7 @@ class CyberComponent extends Component {
     // event handlers
     handleInfoChange(e) {
         this.setState({ infoSecurity: e.target.value });
-        console.log(window.myModel)
+        console.log(myModel)
       }
 
     handleVulnerabilityChange(e) {
