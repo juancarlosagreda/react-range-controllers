@@ -38,7 +38,7 @@ class ScriptCache {
                 if (state === 'complete') {
                     handleLoad()
                 } else if (state === 'error') {
-                    handleRejec();
+                    handleReject();
                 }
             }
 

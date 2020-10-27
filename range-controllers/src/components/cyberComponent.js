@@ -21,10 +21,18 @@ class CyberComponent extends Component {
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
+    // Load script tag
+    componentDidMount() {
+        const script = document.createElement("script");    
+        script.async = true;    
+        script.src = "./model.js";    
+        this.div.appendChild(script);  
+    }
+    
+
     // event handlers
     handleInfoChange(e) {
         this.setState({ infoSecurity: e.target.value });
-        console.log(myModel)
       }
 
     handleVulnerabilityChange(e) {
@@ -54,7 +62,7 @@ class CyberComponent extends Component {
                 className="d-flex align-items-center justify-content-center"
                 style={{ minHeight: "100vh" }}
                 >
-                <div className="w-100" style={{ maxWidth: '400px' }}>
+                <div className="w-100" ref={el => (this.div = el)} style={{ maxWidth: '400px' }}>
                     <h2>General Cyber Resillience</h2>
                     <Form onSubmit={this.handleSubmit}>
                         <Form.Group controlId="generalCyberResillience">
