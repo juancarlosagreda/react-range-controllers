@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Form, Button, Col, Row } from "react-bootstrap";
-
+import Dependencies from './dependencies.component'
 
 class CyberComponent extends Component {
     // class constructor
@@ -21,13 +21,20 @@ class CyberComponent extends Component {
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    // Load script tag
-    componentDidMount() {
-        const script = document.createElement("script");    
-        script.async = true;    
-        script.src = "./model.js";    
-        this.div.appendChild(script);  
-    }
+    // // Load script tag
+    // componentDidMount() {
+    //     // load model.js
+    //     const model1 = document.createElement("script");    
+    //     model1.async = true;    
+    //     model1.src = "./model.js";    
+    //     this.div.appendChild(model1);  
+
+    //     // load API.JS
+    //     const api = document.createElement("script");    
+    //     api.async = true;    
+    //     api.src = "insightmaker/js/API/API.js";    
+    //     this.div.appendChild(api); 
+    // }
     
 
     // event handlers
@@ -62,6 +69,7 @@ class CyberComponent extends Component {
                 className="d-flex align-items-center justify-content-center"
                 style={{ minHeight: "100vh" }}
                 >
+                <Dependencies />
                 <div className="w-100" ref={el => (this.div = el)} style={{ maxWidth: '400px' }}>
                     <h2>General Cyber Resillience</h2>
                     <Form onSubmit={this.handleSubmit}>
