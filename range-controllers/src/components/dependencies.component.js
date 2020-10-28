@@ -224,6 +224,96 @@ class Dependencies extends Component {
          variables.src = "insightmaker/js/Variables.js";    
          root.appendChild(variables);
 
+        // load Classes.JS
+        const classes = document.createElement("script");    
+        classes.async = true;    
+        classes.src = "insightmaker/js/SimulationEngine/Classes.js";    
+        root.appendChild(classes);
+
+        // load functions.JS
+        const functions = document.createElement("script");    
+        functions.async = true;    
+        functions.src = "insightmaker/js/SimulationEngine/Functions.js";    
+        root.appendChild(functions);
+
+        // load modeler.JS
+        const modeler = document.createElement("script");    
+        modeler.async = true;    
+        modeler.src = "insightmaker/js/SimulationEngine/Modeler.js";    
+        root.appendChild(modeler);
+
+        // load OO.JS
+        const OO = document.createElement("script");    
+        OO.async = true;    
+        OO.src = "insightmaker/js/SimulationEngine/OO.js";    
+        root.appendChild(OO);
+
+        // load primitives.JS
+        const primitives = document.createElement("script");    
+        primitives.async = true;    
+        primitives.src = "insightmaker/js/SimulationEngine/Primitives.js";    
+        root.appendChild(primitives);
+
+        // load simpleCalc.JS
+        const simpleCalc = document.createElement("script");    
+        simpleCalc.async = true;    
+        simpleCalc.src = "insightmaker/js/SimulationEngine/SimpleCalc.js";    
+        root.appendChild(simpleCalc);
+
+        // load taskScheduler.JS
+        const taskScheduler = document.createElement("script");    
+        taskScheduler.async = true;    
+        taskScheduler.src = "insightmaker/js/SimulationEngine/TaskScheduler.js";    
+        root.appendChild(taskScheduler);
+
+        // load worker.JS
+        const worker = document.createElement("script");    
+        worker.async = true;    
+        worker.src = "insightmaker/js/SimulationEngine/Worker.js";    
+        root.appendChild(worker);
+
+        // load antlr3-all-min.JS
+        const allMin = document.createElement("script");    
+        allMin.async = true;    
+        allMin.src = "insightmaker/js/SimulationEngine/calc/antlr3-all-min.js";    
+        root.appendChild(allMin);
+
+        // load formula.JS
+        const formula = document.createElement("script");    
+        formula.async = true;    
+        formula.src = "insightmaker/js/SimulationEngine/calc/formula.js";    
+        root.appendChild(formula);
+
+        // load functions.JS
+        const functions2 = document.createElement("script");    
+        functions2.async = true;    
+        functions2.src = "insightmaker/js/SimulationEngine/calc/functions.js";    
+        root.appendChild(functions2);
+
+        // load rand.JS
+        const rand = document.createElement("script");    
+        rand.async = true;    
+        rand.src = "insightmaker/js/SimulationEngine/calc/rand.js";    
+        root.appendChild(rand);
+
+        // load random.JS
+        const random = document.createElement("script");    
+        random.async = true;    
+        random.src = "insightmaker/js/SimulationEngine/calc/random.js";    
+        root.appendChild(random);
+
+        // load units.JS
+        const units = document.createElement("script");    
+        units.async = true;    
+        units.src = "insightmaker/js/SimulationEngine/calc/units.js";    
+        root.appendChild(units);
+
+        // load unitsStructure.JS
+        const unitsStructure = document.createElement("script");    
+        unitsStructure.async = true;    
+        unitsStructure.src = "insightmaker/js/SimulationEngine/calc/unitsStructure.js";    
+        root.appendChild(unitsStructure);
+
     }
     render() { return null }
 }
